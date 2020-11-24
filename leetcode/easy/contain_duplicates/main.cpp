@@ -1,7 +1,7 @@
 #include <algorithm>
 #include <ios>
 #include <iostream>
-#include <set>
+#include <unordered_set>
 #include <vector>
 
 using namespace std;
@@ -14,7 +14,7 @@ bool contains_duplicate(vector<int>& nums) {
 
 // another approach
 bool contains_duplicate2(vector<int>& nums) {
-  set<int> set_nums(nums.begin(), nums.end());
+  unordered_set<int> set_nums(nums.begin(), nums.end());
   return nums.size() > set_nums.size();
 }
 

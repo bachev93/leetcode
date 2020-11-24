@@ -5,4 +5,5 @@ SUBDIRS += \
     two_sum \
     reverse_integer \
     roman_to_int \
-    contain_duplicates
+    contain_duplicates \
+    longest_common_prefix
