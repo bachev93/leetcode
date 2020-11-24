@@ -11,7 +11,7 @@ const unordered_map<char, int> roman = {{'I', 1},   {'V', 5},   {'X', 10},
                                         {'M', 1000}};
 }
 
-int romanToInt(string s) {
+int roman_to_int(string s) {
   auto result = 0;
   for (auto i = 0u; i < s.size(); ++i) {
     auto curr = roman.at(s[i]);
@@ -32,7 +32,7 @@ int romanToInt(string s) {
 
 int main() {
   // 1994
-  cout << romanToInt("MCMXCIV") << endl;
+  cout << roman_to_int("MCMXCIV") << endl;
 
   return 0;
 }

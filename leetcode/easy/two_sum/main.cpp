@@ -1,10 +1,10 @@
- #include <iostream>
+#include <iostream>
 #include <unordered_map>
 #include <vector>
 
 using namespace std;
 
-vector<int> twoSum(vector<int>& nums, int target) {
+vector<int> two_sum(vector<int>& nums, int target) {
   vector<int> res(2);
   unordered_map<int, int> cache;
   for (auto i = 0u; i < nums.size(); ++i) {
@@ -25,7 +25,7 @@ int main() {
   vector<int> nums = {3, 2, 4};
   auto target = 6;
 
-  auto res = twoSum(nums, target);
+  auto res = two_sum(nums, target);
   cout << "[";
   for (const auto& elem : res) {
     cout << elem << ", ";
