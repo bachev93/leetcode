@@ -6,4 +6,5 @@ SUBDIRS += \
     reverse_integer \
     roman_to_int \
     contain_duplicates \
-    longest_common_prefix
+    longest_common_prefix \
+    valid_parenthesses
