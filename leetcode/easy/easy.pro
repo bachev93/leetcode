@@ -8,4 +8,5 @@ SUBDIRS += \
     contain_duplicates \
     longest_common_prefix \
     valid_parenthesses \
-    implement_strstr
+    implement_strstr \
+    plus_one
