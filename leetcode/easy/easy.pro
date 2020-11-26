@@ -9,4 +9,6 @@ SUBDIRS += \
     longest_common_prefix \
     valid_parenthesses \
     implement_strstr \
-    plus_one
+    plus_one \
+    my_sqrt \
+    merge_sorted_arr
