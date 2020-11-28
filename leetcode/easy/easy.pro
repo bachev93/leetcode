@@ -1,6 +1,7 @@
 TEMPLATE = subdirs
 
 SUBDIRS += \
+    pascal_triangle \
     remove_duplicates \
     two_sum \
     reverse_integer \
