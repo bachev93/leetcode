@@ -8,6 +8,7 @@ SUBDIRS += \
     roman_to_int \
     contain_duplicates \
     longest_common_prefix \
+    valid_palindrome \
     valid_parenthesses \
     implement_strstr \
     plus_one \
