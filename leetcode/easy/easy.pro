@@ -15,4 +15,5 @@ SUBDIRS += \
     my_sqrt \
     merge_sorted_arr \
     single_number \
-    move_zeroes
+    move_zeroes \
+    majority_element
