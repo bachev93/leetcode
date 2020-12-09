@@ -16,4 +16,8 @@ SUBDIRS += \
     merge_sorted_arr \
     single_number \
     move_zeroes \
-    majority_element
+    majority_element \
+    rotate_image \
+    reverse_string \
+    first_unique_char \
+    valid_anagram
