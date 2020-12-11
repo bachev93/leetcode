@@ -20,4 +20,8 @@ SUBDIRS += \
     rotate_image \
     reverse_string \
     first_unique_char \
-    valid_anagram
+    valid_anagram \
+    first_bad_version \
+    fizz_buzz \
+    power_of_three \
+    number_of_1_bits
