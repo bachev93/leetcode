@@ -6,17 +6,17 @@
 using namespace std;
 
 int hamming_weight(uint32_t n) {
-  vector<int> bits;
+  auto count = 0;
   while (n > 0) {
-    bits.push_back(n % 2);
+    count += n % 2;
     n /= 2;
   }
 
-  const auto res = count(bits.begin(), bits.end(), 1);
-  return res;
+  return count;
 }
 
 int main() {
-  cout << "hamming weight: " << hamming_weight(5) << endl;
+  cout << "hamming weight: " << hamming_weight(3) << endl;
+
   return 0;
 }
