@@ -24,4 +24,5 @@ SUBDIRS += \
     first_bad_version \
     fizz_buzz \
     power_of_three \
-    number_of_1_bits
+    number_of_1_bits \
+    hamming_distance
