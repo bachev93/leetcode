@@ -30,7 +30,23 @@ int hamming_distance(int x, int y) {
   return res;
 }
 
+// another approach
+int hamming_distance2(int x, int y) {
+  auto val = x ^ y;
+  vector<int> bits;
+  while (val > 0) {
+    bits.push_back(val % 2);
+    val /= 2;
+  }
+
+  const auto res = count(bits.begin(), bits.end(), 1);
+  return res;
+}
+
+// TODO: add here Brian Kernigan's algorithm to count 1s bits in varuable
+
 int main() {
-  cout << "hamming distance is: " << hamming_distance(1, 4) << endl;
+  //  cout << "hamming distance is: " << hamming_distance(1, 4) << endl;
+  cout << "hamming distance is: " << hamming_distance2(1, 4) << endl;
   return 0;
 }
