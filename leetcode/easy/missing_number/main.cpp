@@ -12,7 +12,7 @@ int missing_number(vector<int>& nums) {
   if (nums.front() != 0) {
     return 0;
   }
-  if (nums.back() != nums.size()) {
+  if (nums.back() != static_cast<int>(nums.size())) {
     return nums.size();
   }
 
