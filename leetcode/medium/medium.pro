@@ -1,4 +1,5 @@
 TEMPLATE = subdirs
 
 SUBDIRS += \
-    group_anagrams
+    group_anagrams \
+    find_anagrams

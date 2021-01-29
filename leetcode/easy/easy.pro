@@ -27,4 +27,5 @@ SUBDIRS += \
     number_of_1_bits \
     hamming_distance \
     missing_number \
-    rotate_array
+    rotate_array \
+    reverse_list
