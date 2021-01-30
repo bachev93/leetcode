@@ -32,9 +32,9 @@ bool contains_duplicate3(vector<int>& nums) {
 
 int main() {
   vector<int> nums = {1, 2, 3, 1};
-  cout << boolalpha << contains_duplicate2(nums) << endl;
-  //  cout << boolalpha << contains_duplicate(nums) << endl;
-  //  cout << boolalpha << contains_duplicate3(nums) << endl;
+  //  cout << boolalpha << contains_duplicate2(nums) << endl;
+  cout << boolalpha << contains_duplicate(nums) << endl;
+  //    cout << boolalpha << contains_duplicate3(nums) << endl;
 
   return 0;
 }

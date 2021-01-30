@@ -1,4 +1,5 @@
 TEMPLATE = subdirs
 
 SUBDIRS += \
-    rotate_array
+    group_anagrams \
+    find_anagrams

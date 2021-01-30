@@ -26,4 +26,6 @@ SUBDIRS += \
     power_of_three \
     number_of_1_bits \
     hamming_distance \
-    missing_number
+    missing_number \
+    rotate_array \
+    reverse_list

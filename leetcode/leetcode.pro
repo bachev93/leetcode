@@ -2,4 +2,5 @@ TEMPLATE = subdirs
 
 SUBDIRS += \
     easy \
-    medium
+    medium \
+    other_tasks
