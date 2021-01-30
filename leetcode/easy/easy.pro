@@ -1,6 +1,9 @@
 TEMPLATE = subdirs
 
 SUBDIRS += \
+    binary_search \
+    guess_number \
+    list_cycle \
     pascal_triangle \
     remove_duplicates \
     two_sum \

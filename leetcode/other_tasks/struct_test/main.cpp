@@ -9,8 +9,8 @@ struct Point {
 };
 
 int main() {
-  //  Point p = {};
-  Point p;
+  Point p = {};
+  //  Point p;
 
   cout << p.x << "\t" << p.y << "\t" << p.flag << endl;
 
