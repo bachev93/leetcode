@@ -6,6 +6,7 @@ SUBDIRS += \
     list_cycle \
     pascal_triangle \
     remove_duplicates \
+    same_tree \
     two_sum \
     reverse_integer \
     roman_to_int \
