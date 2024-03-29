@@ -4,33 +4,45 @@
 
 using namespace std;
 
-vector<int> two_sum(vector<int>& nums, int target) {
-  vector<int> res(2);
-  unordered_map<int, int> cache;
-  for (auto i = 0u; i < nums.size(); ++i) {
-    const auto needed_num = target - nums[i];
-    if (cache.find(needed_num) != cache.end()) {
-      res[0] = cache[needed_num];
-      res[1] = i;
-      return res;
+// brute force
+vector<int> twoSum(vector<int>& nums, int target) {
+  int n = nums.size();
+  for (int i = 0; i < n - 1; ++i) {
+    for (int j = i + 1; j < n; ++j) {
+      if (nums[i] + nums[j] == target) {
+        return {i, j};
+      }
     }
-    cache[nums[i]] = i;
   }
-  return res;
+  return {}; // No solution found
+}
+
+// BEST
+vector<int> twoSum2(vector<int>& nums, int target) {
+  unordered_map<int, int> nums_map;
+  for(int i = 0; i < nums.size(); ++i) {
+    if(int diff = target - nums[i]; nums_map.count(diff)) {
+      return{nums_map[diff], i};
+    } else {
+      nums_map[nums[i]] = i;
+    }
+  }
+
+  return {};
 }
 
 int main() {
-  //  vector<int> nums = {2, 7, 11, 15};
-  //  auto target = 9;
-  vector<int> nums = {3, 2, 4};
-  auto target = 6;
+   vector<int> nums = {2, 7, 11, 15};
+   auto target = 9;
+  // vector<int> nums = {3, 2, 4};
+  // auto target = 6;
 
-  auto res = two_sum(nums, target);
+  auto res = twoSum(nums, target);
   cout << "[";
   for (const auto& elem : res) {
     cout << elem << ", ";
   }
-  cout << "]";
+  cout << "]" << endl;
 
   return 0;
 }
