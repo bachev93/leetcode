@@ -5,28 +5,31 @@
 using namespace std;
 
 // approach using std algorithms
-int search(vector<int> &nums, int target) {
+int search(vector<int>& nums, int target) {
   auto it = lower_bound(nums.begin(), nums.end(), target);
-  if (it == nums.end() || *it != target) {
-    return -1;
+  if (it != nums.end() && *it == target) {
+      return distance(nums.begin(), it);
   }
-
-  return it - nums.begin();
+  return -1;
 }
 
 int search2(vector<int> &nums, int target) {
-  int ind, left = 0, right = nums.size() - 1;
-  while (left <= right) {
-    ind = left + (right - left) / 2;
-    if (nums[ind] == target) {
-      return ind;
-    }
+  int start=0;
+  int end=nums.size()-1;
+  int mid=start+(end-start)/2;
 
-    if (target < nums[ind]) {
-      right = ind - 1;
-    } else {
-      left = ind + 1;
-    }
+  while(start<=end){
+      int number=nums[mid];
+      if(number==target){
+          return mid;
+      }
+      if(number<target){
+          start=mid+1;
+      }
+      else{
+          end=mid-1;
+      }
+      mid=start+(end-start)/2;
   }
 
   return -1;
@@ -35,7 +38,7 @@ int search2(vector<int> &nums, int target) {
 int main() {
   vector<int> nums = {1, 2, 3, 4, 5};
 
-  cout << "binary_search pos: " << search(nums, 4);
+  cout << "binary_search pos: " << search(nums, 4) << endl;
 
   return 0;
 }
