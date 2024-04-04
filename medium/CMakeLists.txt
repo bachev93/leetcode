@@ -1,4 +1,5 @@
 set (MEDIUM_SOURCES
+    find_all_anagrams_in_string.cpp
     find_anagrams.cpp
     group_anagrams.cpp    
 )
