@@ -14,14 +14,14 @@ struct ListNode {
 
 // hash table approach
 bool hasCycle(ListNode *head) {
-  unordered_set<ListNode *> cache;
+  unordered_set<ListNode *> node_ptr_set;
 
   while (head != nullptr) {
-    if (cache.count(head)) {
+    if (node_ptr_set.count(head)) {
       return true;
     }
 
-    cache.insert(head);
+    node_ptr_set.insert(head);
     head = head->next;
   }
 

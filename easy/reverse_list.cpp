@@ -12,30 +12,28 @@ struct ListNode {
   ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
 
-// my approach (just intuition)
+// my approach, bruteforce
 ListNode *reverseList(ListNode *head) {
-  if (head == nullptr) {
-    return head;
+  if(head == nullptr || head->next == nullptr) {
+      return head;
   }
 
-  vector<int> vals;
-  while (head) {
-    vals.push_back(head->val);
-    head = head->next;
+  vector<ListNode*> node_ptrs;
+  while(head) {
+      node_ptrs.push_back(head);
+      head = head->next;
   }
 
-  auto res = new ListNode(vals.back());
-  if (vals.size() == 1) {
-    return res;
+  for(int i = node_ptrs.size(); i > 0; --i) {
+      head = node_ptrs[i - 1];
+      if(i == 1) {
+          head->next = nullptr;
+      } else {
+          head->next = node_ptrs[i - 2];
+      }
   }
 
-  auto next_node = res;
-  for (int i = vals.size() - 2; i >= 0; --i) {
-    next_node->next = new ListNode(vals[i]);
-    next_node = next_node->next;
-  }
-
-  return res;
+  return *node_ptrs.rbegin();
 }
 
 // iterative approach
