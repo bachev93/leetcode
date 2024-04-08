@@ -1,4 +1,5 @@
 set(EASY_SOURCES
+    balanced_binary_tree.cpp
     binary_search.cpp
     contain_duplicates.cpp
     first_bad_version.cpp
