@@ -27,6 +27,7 @@ set(EASY_SOURCES
     rotate_image.cpp
     same_tree.cpp
     single_number.cpp
+    symmetric_tree.cpp
     two_sum.cpp
     valid_anagram.cpp
     valid_palindrome.cpp
