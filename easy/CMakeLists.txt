@@ -30,6 +30,7 @@ set(EASY_SOURCES
     same_tree.cpp
     single_number.cpp
     symmetric_tree.cpp
+    top_k_frequent_words.cpp
     two_sum.cpp
     valid_anagram.cpp
     valid_palindrome.cpp
