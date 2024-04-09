@@ -1,5 +1,6 @@
 set(EASY_SOURCES
     balanced_binary_tree.cpp
+    best_time_buy_and_sell_stock.cpp
     binary_search.cpp
     contain_duplicates.cpp
     first_bad_version.cpp

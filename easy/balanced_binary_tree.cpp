@@ -25,7 +25,7 @@ int maxdepth(TreeNode* root, bool& res) {
     res=false;
   }
 
-  return max(l+1,r+1);
+  return max(l,r) + 1;
 }
 
 bool isBalanced(TreeNode* root) {
