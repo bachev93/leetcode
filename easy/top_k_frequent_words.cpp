@@ -65,7 +65,7 @@ int main() {
   vector<string> words2{"the","day","is","sunny","the","the","the","sunny","is","is"};
   int k2 = 4;
   
-  cout << "top k frequent words: " << endl;
+  cout << "top k frequent words: ";
   for(const auto& str : topKFrequent(words2, k2)) {
     cout << str << ", ";
   }
