@@ -2,6 +2,8 @@ set (MEDIUM_SOURCES
     find_all_anagrams_in_string.cpp
     find_anagrams.cpp
     group_anagrams.cpp    
+    top_k_frequent_elements.cpp
+    top_k_frequent_words.cpp
 )
 
 foreach(source ${MEDIUM_SOURCES})
