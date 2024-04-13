@@ -4,6 +4,7 @@ set (MEDIUM_SOURCES
     find_anagrams.cpp
     group_anagrams.cpp
     search_2d_matrix.cpp
+    search_in_rotated_sorted_array.cpp
     top_k_frequent_elements.cpp
     top_k_frequent_words.cpp
 )

@@ -18,7 +18,7 @@ bool searchMatrix(vector<vector<int>>& matrix, int target) {
   return result;
 }
 
-// solution from leetcode
+// solution from leetcode. Consider 2D matrix as 1D array
 bool searchMatrix2(vector<vector<int>>& matrix, int target) {
   const int rows = matrix.size();
   const int cols = matrix[0].size();
