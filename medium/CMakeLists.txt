@@ -2,6 +2,7 @@ set (MEDIUM_SOURCES
     add_two_numbers.cpp
     find_all_anagrams_in_string.cpp
     find_anagrams.cpp
+    find_min_in_rotated_sorted_array.cpp
     group_anagrams.cpp
     search_2d_matrix.cpp
     search_in_rotated_sorted_array.cpp
