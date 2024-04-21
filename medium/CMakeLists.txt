@@ -5,6 +5,7 @@ set (MEDIUM_SOURCES
     find_min_in_rotated_sorted_array.cpp
     four_sum.cpp
     group_anagrams.cpp
+    merge_intervals.cpp
     number_of_islands.cpp
     search_2d_matrix.cpp
     search_in_rotated_sorted_array.cpp
