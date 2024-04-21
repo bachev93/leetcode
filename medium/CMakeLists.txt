@@ -8,6 +8,7 @@ set (MEDIUM_SOURCES
     group_anagrams.cpp
     merge_intervals.cpp
     number_of_islands.cpp
+    partition_labels.cpp
     search_2d_matrix.cpp
     search_in_rotated_sorted_array.cpp
     top_k_frequent_elements.cpp
