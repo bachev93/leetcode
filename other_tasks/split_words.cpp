@@ -1,4 +1,3 @@
-#include <algorithm>
 #include <cctype>
 #include <iostream>
 #include <string>
@@ -14,13 +13,13 @@ vector<string> split(const string& str) {
       word += c;
     } else {
       if (!word.empty()) {
-        res.push_back(move(word));
+        res.push_back(std::move(word));
         word.clear();
       }
     }
   }
   if (!word.empty()) {
-    res.push_back(move(word));
+    res.push_back(std::move(word));
   }
 
   return res;
