@@ -12,6 +12,7 @@ set (MEDIUM_SOURCES
     partition_labels.cpp
     search_2d_matrix.cpp
     search_in_rotated_sorted_array.cpp
+    three_sum_closet.cpp
     top_k_frequent_elements.cpp
     top_k_frequent_words.cpp
 )

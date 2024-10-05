@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <utility>
 
 using namespace std;
 
@@ -40,7 +41,7 @@ vector<string> fizz_buzz2(int n) {
       ans = to_string(i);
     }
 
-    res[i - 1] = move(ans);
+    res[i - 1] = std::move(ans);
   }
   return res;
 }
