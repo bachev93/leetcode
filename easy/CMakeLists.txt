@@ -12,6 +12,7 @@ set(EASY_SOURCES
     list_cycle.cpp
     longest_common_prefix.cpp
     majority_element.cpp
+    merge_two_sorted_lists.cpp
     merge_sorted_arr.cpp
     missing_number.cpp
     move_zeroes.cpp
@@ -21,6 +22,7 @@ set(EASY_SOURCES
     plus_one.cpp
     power_of_three.cpp
     remove_duplicates.cpp
+    remove_element.cpp
     reverse_integer.cpp
     reverse_list.cpp
     reverse_string.cpp
