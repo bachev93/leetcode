@@ -6,7 +6,7 @@
 using namespace std;
 
 bool is_valid(string s) {
-  const unordered_map<char, char> parenthesses = {
+  const unordered_map<char, char> parentheses = {
       {'{', '}'},
       {'(', ')'},
       {'[', ']'},
@@ -14,15 +14,15 @@ bool is_valid(string s) {
 
   stack<char> stk;
   for (const auto sign : s) {
-    if (!stk.empty() && parenthesses.count(stk.top()) &&
-        parenthesses.at(stk.top()) == sign) {
+    if (!stk.empty() && parentheses.count(stk.top()) &&
+        parentheses.at(stk.top()) == sign) {
       stk.pop();
     } else {
       stk.push(sign);
     }
   }
 
-  return stk.empty() ? true : false;
+  return stk.empty();
 }
 
 int main() {

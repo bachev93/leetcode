@@ -33,7 +33,7 @@ set(EASY_SOURCES
     two_sum.cpp
     valid_anagram.cpp
     valid_palindrome.cpp
-    valid_parenthesses.cpp
+    valid_parentheses.cpp
 )
 
 foreach(source ${EASY_SOURCES})
