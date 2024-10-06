@@ -1,38 +1,38 @@
-#include <vector>
-#include <string>
-#include <map>
-#include <unordered_map>
-#include <set>
 #include <algorithm>
 #include <iostream>
 #include <iterator>
+#include <map>
+#include <set>
+#include <string>
+#include <unordered_map>
+#include <vector>
 
 using namespace std;
 
 // my BRUTEFORCE solution
 vector<string> topKFrequent(vector<string>& words, int k) {
   unordered_map<string, int> words_count;
-  for(const auto& word : words) {
+  for (const auto& word : words) {
     ++words_count[word];
   }
 
   map<int, set<string>> freq_to_words;
-  for(const auto& [word , counter] : words_count) {
+  for (const auto& [word, counter] : words_count) {
     freq_to_words[counter].insert(word);
   }
 
   vector<string> result;
-  for(auto it = freq_to_words.rbegin(); it != freq_to_words.rend(); ++it) {
-    if(result.size() >= k) {
+  for (auto it = freq_to_words.rbegin(); it != freq_to_words.rend(); ++it) {
+    if (result.size() >= k) {
       break;
     }
 
     copy(it->second.begin(), it->second.end(), back_inserter(result));
   }
 
-  return vector(make_move_iterator(result.begin()), make_move_iterator(result.begin() + k));
+  return vector(make_move_iterator(result.begin()),
+                make_move_iterator(result.begin() + k));
 }
-
 
 // another solution from leetcode
 vector<string> topKFrequent2(vector<string>& words, int k) {
@@ -59,14 +59,15 @@ vector<string> topKFrequent2(vector<string>& words, int k) {
 }
 
 int main() {
-  vector<string> words{"i","love","leetcode","i","love","coding"};
+  vector<string> words{"i", "love", "leetcode", "i", "love", "coding"};
   int k = 2;
-  
-  vector<string> words2{"the","day","is","sunny","the","the","the","sunny","is","is"};
+
+  vector<string> words2{"the", "day", "is",    "sunny", "the",
+                        "the", "the", "sunny", "is",    "is"};
   int k2 = 4;
-  
+
   cout << "top k frequent words: ";
-  for(const auto& str : topKFrequent(words2, k2)) {
+  for (const auto& str : topKFrequent(words2, k2)) {
     cout << str << ", ";
   }
   cout << endl;

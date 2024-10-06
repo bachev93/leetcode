@@ -5,40 +5,40 @@ using namespace std;
 
 struct ListNode {
   int val;
-  ListNode *next;
+  ListNode* next;
 
   ListNode() : val(0), next(nullptr) {}
   ListNode(int x) : val(x), next(nullptr) {}
-  ListNode(int x, ListNode *next) : val(x), next(next) {}
+  ListNode(int x, ListNode* next) : val(x), next(next) {}
 };
 
 // my approach, bruteforce
-ListNode *reverseList(ListNode *head) {
-  if(head == nullptr || head->next == nullptr) {
-      return head;
+ListNode* reverseList(ListNode* head) {
+  if (head == nullptr || head->next == nullptr) {
+    return head;
   }
 
   vector<ListNode*> node_ptrs;
-  while(head) {
-      node_ptrs.push_back(head);
-      head = head->next;
+  while (head) {
+    node_ptrs.push_back(head);
+    head = head->next;
   }
 
-  for(int i = node_ptrs.size(); i > 0; --i) {
-      head = node_ptrs[i - 1];
-      if(i == 1) {
-          head->next = nullptr;
-      } else {
-          head->next = node_ptrs[i - 2];
-      }
+  for (int i = node_ptrs.size(); i > 0; --i) {
+    head = node_ptrs[i - 1];
+    if (i == 1) {
+      head->next = nullptr;
+    } else {
+      head->next = node_ptrs[i - 2];
+    }
   }
 
   return *node_ptrs.rbegin();
 }
 
 // iterative approach
-ListNode *reverseList2(ListNode *head) {
-  ListNode *prev = nullptr;
+ListNode* reverseList2(ListNode* head) {
+  ListNode* prev = nullptr;
   auto curr = head;
   while (curr != nullptr) {
     auto tmp = curr->next;
@@ -51,12 +51,12 @@ ListNode *reverseList2(ListNode *head) {
 }
 
 // recursive approach
-ListNode *reverseList3(ListNode *head) {
+ListNode* reverseList3(ListNode* head) {
   if (head == nullptr || head->next == nullptr) {
     return head;
   }
 
-  ListNode *p = reverseList3(head->next);
+  ListNode* p = reverseList3(head->next);
   head->next->next = head;
   head->next = nullptr;
   return p;

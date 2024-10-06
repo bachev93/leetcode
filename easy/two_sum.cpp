@@ -20,9 +20,9 @@ vector<int> twoSum(vector<int>& nums, int target) {
 // BEST
 vector<int> twoSum2(vector<int>& nums, int target) {
   unordered_map<int, int> nums_map;
-  for(int i = 0; i < nums.size(); ++i) {
-    if(int diff = target - nums[i]; nums_map.count(diff)) {
-      return{nums_map[diff], i};
+  for (int i = 0; i < nums.size(); ++i) {
+    if (int diff = target - nums[i]; nums_map.count(diff)) {
+      return {nums_map[diff], i};
     } else {
       nums_map[nums[i]] = i;
     }
@@ -32,8 +32,8 @@ vector<int> twoSum2(vector<int>& nums, int target) {
 }
 
 int main() {
-   vector<int> nums = {2, 7, 11, 15};
-   auto target = 9;
+  vector<int> nums = {2, 7, 11, 15};
+  auto target = 9;
   // vector<int> nums = {3, 2, 4};
   // auto target = 6;
 

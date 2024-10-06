@@ -2,10 +2,8 @@
 
 namespace {
 const auto bad_v = 7;
-bool isBadVersion(int val) {
-  return val >= bad_v;
-}
-}  // namespace
+bool isBadVersion(int val) { return val >= bad_v; }
+} // namespace
 
 int first_bad_version(int n) {
   auto left = 1;

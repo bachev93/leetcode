@@ -5,7 +5,7 @@
 
 using namespace std;
 
-int threeSumClosest(vector<int> &nums, int target) {
+int threeSumClosest(vector<int>& nums, int target) {
   sort(nums.begin(), nums.end());
 
   int result = std::numeric_limits<int>::max() / 2;

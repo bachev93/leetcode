@@ -10,6 +10,7 @@ set (MEDIUM_SOURCES
     merge_intervals.cpp
     number_of_islands.cpp
     partition_labels.cpp
+    remove_nth_element.cpp
     search_2d_matrix.cpp
     search_in_rotated_sorted_array.cpp
     three_sum_closet.cpp

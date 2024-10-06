@@ -5,7 +5,7 @@
 using namespace std;
 
 // simple approach
-void rotate2(vector<int> &nums, int k) {
+void rotate2(vector<int>& nums, int k) {
   k %= nums.size();
 
   for (auto i = 0; i < k; ++i) {
@@ -18,7 +18,7 @@ void rotate2(vector<int> &nums, int k) {
   }
 }
 
-void rotate(vector<int> &nums, int k) {
+void rotate(vector<int>& nums, int k) {
   k %= nums.size();
 
   reverse(nums.begin(), nums.end());

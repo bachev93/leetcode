@@ -31,7 +31,7 @@ private:
 };
 
 int main() {
-  D *d = new D();
+  D* d = new D();
   delete d;
   return 0;
 }

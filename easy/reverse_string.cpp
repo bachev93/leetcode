@@ -4,9 +4,7 @@
 
 using namespace std;
 
-void reverse_string(vector<char>& s) {
-  reverse(s.begin(), s.end());
-}
+void reverse_string(vector<char>& s) { reverse(s.begin(), s.end()); }
 
 void reverse_string2(vector<char>& s) {
   for (auto i = 0u; i < s.size() / 2; ++i) {

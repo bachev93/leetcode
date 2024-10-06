@@ -1,5 +1,3 @@
-*.pro.user*
 build*
-*.qmake.stash
 .vscode
 .cache

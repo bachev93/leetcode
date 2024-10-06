@@ -3,12 +3,12 @@
 using namespace std;
 
 class Base {
- public:
+public:
   Base() { throw 0; }
 };
 
 class Derived : public Base {
- public:
+public:
   Derived() try : Base() {
   } catch (...) {
     cout << "1";

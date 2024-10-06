@@ -25,7 +25,7 @@ int main() {
   const auto num_rows = 5;
   const auto pascal_triangle = generate(num_rows);
 
-  for (const auto &row : pascal_triangle) {
+  for (const auto& row : pascal_triangle) {
     for (const auto elem : row) {
       cout << elem << ", ";
     }

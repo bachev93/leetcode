@@ -18,7 +18,7 @@ public:
 };
 
 int main() {
-  Base *base = new Derived(10);
+  Base* base = new Derived(10);
   base->print();
   delete base;
   return 0;

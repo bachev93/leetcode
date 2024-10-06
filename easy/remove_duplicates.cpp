@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int remove_duplicates(vector<int> &nums) {
+int remove_duplicates(vector<int>& nums) {
   auto it = unique(nums.begin(), nums.end());
   nums.erase(it, nums.end());
   return nums.size();

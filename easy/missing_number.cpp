@@ -6,7 +6,7 @@
 
 using namespace std;
 
-int missing_number(vector<int> &nums) {
+int missing_number(vector<int>& nums) {
   sort(nums.begin(), nums.end());
 
   if (nums.front() != 0) {
@@ -27,7 +27,7 @@ int missing_number(vector<int> &nums) {
 }
 
 // another approach
-int missing_number2(vector<int> &nums) {
+int missing_number2(vector<int>& nums) {
   set<int> nums_set(nums.begin(), nums.end());
 
   for (auto i = 0u; i < nums.size() + 1; ++i) {
@@ -39,7 +39,7 @@ int missing_number2(vector<int> &nums) {
 }
 
 // approach with gauss sum
-int missing_number3(vector<int> &nums) {
+int missing_number3(vector<int>& nums) {
   const auto expected_sum = nums.size() * (nums.size() + 1) / 2;
   const auto real_sum = accumulate(nums.begin(), nums.end(), 0);
   return expected_sum - real_sum;

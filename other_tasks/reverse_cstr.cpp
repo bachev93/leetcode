@@ -4,14 +4,14 @@
 
 using namespace std;
 
-void reverse(char *str) {
+void reverse(char* str) {
   const auto len = strlen(str);
   for (auto i = 0u; i < len / 2; ++i) {
     swap(str[i], str[len - 1 - i]);
   }
 }
 
-void reverse2(char *str) {
+void reverse2(char* str) {
   const auto len = strlen(str);
   for (auto i = 0u; i < len / 2; ++i) {
     auto tmp = str[i];
