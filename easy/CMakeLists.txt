@@ -3,6 +3,7 @@ set(EASY_SOURCES
     best_time_buy_and_sell_stock.cpp
     binary_search.cpp
     contain_duplicates.cpp
+    find_idx_first_substr.cpp
     first_bad_version.cpp
     first_unique_char.cpp
     fizz_buzz.cpp
