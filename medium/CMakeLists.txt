@@ -4,6 +4,7 @@ set (MEDIUM_SOURCES
     container_most_water.cpp
     find_all_anagrams_in_string.cpp
     find_anagrams.cpp
+    find_first_and_last_pos_elem_sorted_array.cpp
     find_min_in_rotated_sorted_array.cpp
     four_sum.cpp
     group_anagrams.cpp
